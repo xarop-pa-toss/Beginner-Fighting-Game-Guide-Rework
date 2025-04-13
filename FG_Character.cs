@@ -110,7 +110,8 @@ namespace FG_beginner_guide_rework
                                 }
                                 if (tk8_option == 3)
                                 {
-                                    Console.WriteLine("Salmon 3");
+                                    Console.WriteLine("\nLook for whiff punishes that players throw out and punish them with DF+2,1");
+                                    Console.WriteLine("Also be careful not to throw unsafe moves since kuma has moves that takes a while to recover and leaves them open.");
                                     return;
                                 }
                                 else
@@ -122,14 +123,131 @@ namespace FG_beginner_guide_rework
                             case "ALISA":
                                 Console.WriteLine("\nDifficulty: Easy");
                                 Console.WriteLine("Alisa is a well rounded character with strong/simple poking and neutral.");
+                                Console.WriteLine("\nWhat would you like to learn about Alisa? \n1.Key Moves \n2.Basic Combos \n3.Strategy");
+                                Console.WriteLine("\nInput: ");
+                                tk8_option = Convert.ToInt32(Console.ReadLine());
+                                if (tk8_option == 1)
+                                {
+                                    Console.WriteLine("Alisa key moves:");
+                                    /*Console.WriteLine("1. Bear jab: 1 which can lead to 1,1,1 combo launcher");
+                                    Console.WriteLine("2. Anger hook: BF 2");
+                                    Console.WriteLine("3. Bear Slash: B 1");
+                                    Console.WriteLine("4. Falling Bear: FF 1+2");
+                                    Console.WriteLine("5. Demon Uppercut: FF 2");
+                                    Console.WriteLine("6. Bear Hopkick: UF 3 can also lead to UF 3,4,1+2 combo");
+                                    Console.WriteLine("7. Rabid Bear: FFF 1+2");
+                                    Console.WriteLine("8. Spinning Kuma: DB 4");
+                                    Console.WriteLine("9. Kuma Musou: DB 1,2");
+                                    Console.WriteLine("10. Grizzly Rampage: DF 1,2,1+2");*/
+                                    return;
+                                }
+                                if (tk8_option == 2)
+                                {
+                                    Console.WriteLine("Alisa Basic Combos:");
+                                    /*Console.WriteLine("1. DF+2,1 > B+2,2,1 > F 1+2,1+2");
+                                    Console.WriteLine("2. F 1+2,1+2 > U+2 > B+2,2,1");
+                                    Console.WriteLine("3. DF 2,1 > F+4 > B+2,1 > F 1+2,1+2 > U+2 > B+1");
+                                    Console.WriteLine("4. DF 2,1 > B+2,2,1 > U+2 > QCF+2,1");
+                                    Console.WriteLine("5. DF+2,1 > B+,2,2,1 > U+2 > HEAT > HEAT SMASH");*/
+                                    return;
+                                }
+                                if (tk8_option == 3)
+                                {
+                                    Console.WriteLine("\nLook for whiff punishes that players throw out and punish them with DF+2,1");
+                                    Console.WriteLine("Also be careful not to throw unsafe moves since kuma has moves that takes a while to recover and leaves them open.");
+                                    return;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Please pick the correct option");
+                                    repeatinfo = true;
+                                }
                                 break;
                             case "ASUKA":
                                 Console.WriteLine("\nDifficulty: Easy");
                                 Console.WriteLine("Asuka has a strong keepout game along with strong and unique oki.");
+                                Console.WriteLine("\nWhat would you like to learn about Asuka? \n1.Key Moves \n2.Basic Combos \n3.Strategy");
+                                Console.WriteLine("\nInput: ");
+                                tk8_option = Convert.ToInt32(Console.ReadLine());
+                                if (tk8_option == 1)
+                                {
+                                    Console.WriteLine("Asuka key moves:");
+                                    /*Console.WriteLine("1. Bear jab: 1 which can lead to 1,1,1 combo launcher");
+                                    Console.WriteLine("2. Anger hook: BF 2");
+                                    Console.WriteLine("3. Bear Slash: B 1");
+                                    Console.WriteLine("4. Falling Bear: FF 1+2");
+                                    Console.WriteLine("5. Demon Uppercut: FF 2");
+                                    Console.WriteLine("6. Bear Hopkick: UF 3 can also lead to UF 3,4,1+2 combo");
+                                    Console.WriteLine("7. Rabid Bear: FFF 1+2");
+                                    Console.WriteLine("8. Spinning Kuma: DB 4");
+                                    Console.WriteLine("9. Kuma Musou: DB 1,2");
+                                    Console.WriteLine("10. Grizzly Rampage: DF 1,2,1+2");*/
+                                    return;
+                                }
+                                if (tk8_option == 2)
+                                {
+                                    Console.WriteLine("Asuka Basic Combos:");
+                                    /*Console.WriteLine("1. DF+2,1 > B+2,2,1 > F 1+2,1+2");
+                                    Console.WriteLine("2. F 1+2,1+2 > U+2 > B+2,2,1");
+                                    Console.WriteLine("3. DF 2,1 > F+4 > B+2,1 > F 1+2,1+2 > U+2 > B+1");
+                                    Console.WriteLine("4. DF 2,1 > B+2,2,1 > U+2 > QCF+2,1");
+                                    Console.WriteLine("5. DF+2,1 > B+,2,2,1 > U+2 > HEAT > HEAT SMASH");*/
+                                    return;
+                                }
+                                if (tk8_option == 3)
+                                {
+                                    Console.WriteLine("\nLook for whiff punishes that players throw out and punish them with DF+2,1");
+                                    Console.WriteLine("Also be careful not to throw unsafe moves since kuma has moves that takes a while to recover and leaves them open.");
+                                    return;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Please pick the correct option");
+                                    repeatinfo = true;
+                                }
                                 break;
                             case "CLAUDIO":
                                 Console.WriteLine("\nDifficulty: Easy");
                                 Console.WriteLine("Claudio is a unique install character with a strong hopkick option");
+                                Console.WriteLine("\nWhat would you like to learn about Alisa? \n1.Key Moves \n2.Basic Combos \n3.Strategy");
+                                Console.WriteLine("\nInput: ");
+                                tk8_option = Convert.ToInt32(Console.ReadLine());
+                                if (tk8_option == 1)
+                                {
+                                    Console.WriteLine("Alisa key moves:");
+                                    /*Console.WriteLine("1. Bear jab: 1 which can lead to 1,1,1 combo launcher");
+                                    Console.WriteLine("2. Anger hook: BF 2");
+                                    Console.WriteLine("3. Bear Slash: B 1");
+                                    Console.WriteLine("4. Falling Bear: FF 1+2");
+                                    Console.WriteLine("5. Demon Uppercut: FF 2");
+                                    Console.WriteLine("6. Bear Hopkick: UF 3 can also lead to UF 3,4,1+2 combo");
+                                    Console.WriteLine("7. Rabid Bear: FFF 1+2");
+                                    Console.WriteLine("8. Spinning Kuma: DB 4");
+                                    Console.WriteLine("9. Kuma Musou: DB 1,2");
+                                    Console.WriteLine("10. Grizzly Rampage: DF 1,2,1+2");*/
+                                    return;
+                                }
+                                if (tk8_option == 2)
+                                {
+                                    Console.WriteLine("Alisa Basic Combos:");
+                                    /*Console.WriteLine("1. DF+2,1 > B+2,2,1 > F 1+2,1+2");
+                                    Console.WriteLine("2. F 1+2,1+2 > U+2 > B+2,2,1");
+                                    Console.WriteLine("3. DF 2,1 > F+4 > B+2,1 > F 1+2,1+2 > U+2 > B+1");
+                                    Console.WriteLine("4. DF 2,1 > B+2,2,1 > U+2 > QCF+2,1");
+                                    Console.WriteLine("5. DF+2,1 > B+,2,2,1 > U+2 > HEAT > HEAT SMASH");*/
+                                    return;
+                                }
+                                if (tk8_option == 3)
+                                {
+                                    Console.WriteLine("\nLook for whiff punishes that players throw out and punish them with DF+2,1");
+                                    Console.WriteLine("Also be careful not to throw unsafe moves since kuma has moves that takes a while to recover and leaves them open.");
+                                    return;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Please pick the correct option");
+                                    repeatinfo = true;
+                                }
                                 break;
                             case "CLIVE":
                                 Console.WriteLine("\nDifficulty: Easy");
