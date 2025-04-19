@@ -19,9 +19,8 @@ class FG_Beginner_Guide
             games.Add("3.Mortal Kombat 1");
 
             int choice;
-            Console.WriteLine("\nWelcome to the Fighting Game Beginner Guide");
-            Console.WriteLine("Are you new to fighting games? \n1. Yes \n2. No \n");
-            Console.WriteLine("Input: ");
+            Console.WriteLine("\nWelcome to the Fighting Game Beginner Guide" +
+            "\nAre you new to fighting games? \n1. Yes \n2. No \n" + "\nInput: ");
             choice = Convert.ToInt32(Console.ReadLine());
 
             if (choice == 1)
@@ -91,22 +90,33 @@ class FG_Beginner_Guide
                 Console.WriteLine("\nSorry, this guide is for people who are new to fighting games and wanting to learn.");
                 return;
             }
-            Console.WriteLine("\nWould you like to go through the guide again?");
-            Console.WriteLine("Type yes to repeat or no to end guide");
-            Console.WriteLine("Input: ");
-            pick = Console.ReadLine();
-            pick = pick.ToUpper();
-
-            switch (pick)
+            bool keepasking = true;
+            while (keepasking)
             {
-                case "YES":
-                    repeatcode = true;
-                    break;
+                Console.WriteLine("\nWould you like to go through the guide again?");
+                Console.WriteLine("Type yes to repeat or no to end guide");
+                Console.WriteLine("Input: ");
+                pick = Console.ReadLine();
+                pick = pick.ToUpper();
 
-                case "NO":
-                    Console.WriteLine("\nThank you for using the fighting guide. Go to the lab and get to practicing.");
-                    repeatcode = false;
-                    break;
+                switch (pick)
+                {
+                    case "YES":
+                        repeatcode = true;
+                        keepasking = false;
+                        break;
+
+                    case "NO":
+                        Console.WriteLine("\nThank you for using the fighting guide. Go to the lab and get to practicing.");
+                        repeatcode = false;
+                        keepasking = false;
+                        break;
+
+                    default:
+                        Console.WriteLine("Please choose the correct option.");
+                        keepasking = true;
+                        break;
+                }
             }
         }
     }

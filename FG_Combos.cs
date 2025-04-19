@@ -34,7 +34,7 @@ namespace FG_beginner_guide_rework
                     repeatcode = true;
                 }
             }
-            
+
         }
 
         public static void SF6_Combos()

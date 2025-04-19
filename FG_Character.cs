@@ -71,7 +71,7 @@ namespace FG_beginner_guide_rework
                     Console.WriteLine("\nInput: ");
                     tk8_fighter = Console.ReadLine();
                     tk8_fighter = tk8_fighter.ToUpper();
-                    
+
                     while (repeatinfo)
                     {
                         switch (tk8_fighter)
@@ -571,9 +571,9 @@ namespace FG_beginner_guide_rework
                             break;
                     }
                 }
-                
+
             }
-            
+
         }
 
         /*public static void SF6_Characters()
