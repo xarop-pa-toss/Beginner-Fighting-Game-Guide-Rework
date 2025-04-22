@@ -7,12 +7,10 @@ class FG_Beginner_Guide
 {
     static void Main()
     {
-        bool repeatcode = true;
         string pick;
+        bool repeatcode = true;
         while (repeatcode)
         {
-            int gamechoice;
-            int fg_info;
             List<String> games = new List<String>();
             games.Add("1.Tekken 8");
             games.Add("2.Street Fighter 6");
@@ -20,8 +18,12 @@ class FG_Beginner_Guide
 
             int choice;
             Console.WriteLine("\nWelcome to the Fighting Game Beginner Guide" +
-            "\nAre you new to fighting games? \n1. Yes \n2. No \n" + "\nInput: ");
-            choice = Convert.ToInt32(Console.ReadLine());
+                              "\nAre you new to fighting games? \n1. Yes \n2. No \n" + "\nInput: ");
+
+            if (int.TryParse(Console.ReadLine(), out choice))
+            {
+
+            };
 
             if (choice == 1)
             {
@@ -35,7 +37,7 @@ class FG_Beginner_Guide
                 }
 
                 Console.WriteLine("\nInput: ");
-                gamechoice = Convert.ToInt32(Console.ReadLine());
+                int gamechoice = Convert.ToInt32(Console.ReadLine());
 
                 switch (gamechoice)
                 {
@@ -45,7 +47,7 @@ class FG_Beginner_Guide
                         Console.WriteLine("\nWhat would you like to learn about Tekken 8?");
                         Console.WriteLine("1.Movement \n2.Picking a Character \n3.Combos \n");
                         Console.WriteLine("Input: ");
-                        fg_info = Convert.ToInt32(Console.ReadLine());
+                        int fg_info = Convert.ToInt32(Console.ReadLine());
                         if (fg_info == 1)
                         {
                             FG_Movement.Tekken_8();
@@ -85,11 +87,18 @@ class FG_Beginner_Guide
                         break;
                 }
             }
+
             if (choice == 2)
             {
-                Console.WriteLine("\nSorry, this guide is for people who are new to fighting games and wanting to learn.");
+                Console.WriteLine("\nSorry, this guide is for people who are new to fighting games and want to learn.");
                 return;
             }
+
+            else
+            {
+                Console.WriteLine("Please enter the correct input");
+            }
+
             bool keepasking = true;
             while (keepasking)
             {
