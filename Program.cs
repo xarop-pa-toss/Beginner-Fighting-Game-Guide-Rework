@@ -38,7 +38,6 @@ class FG_Beginner_Guide
 
                 Console.WriteLine("\nInput: ");
                 int gamechoice = Convert.ToInt32(Console.ReadLine());
-
                 switch (gamechoice)
                 {
                     case 1:
@@ -72,6 +71,14 @@ class FG_Beginner_Guide
                         {
                             FG_Movement.SF6();
                         }
+                        if (fg_info == 2)
+                        {
+                            FG_Character.SF6_Characters();
+                        }
+                        if (fg_info == 3)
+                        {
+                            FG_Combos.SF6_Combos();
+                        }
                         break;
                     case 3:
                         Console.WriteLine("\nMortal Kombat 1 is 2D fighting game that focus on movement.");
@@ -94,7 +101,8 @@ class FG_Beginner_Guide
                 return;
             }
 
-            else
+            //look into since it displays after fg_character is finished
+            if (choice != 1 || choice != 2)
             {
                 Console.WriteLine("Please enter the correct input");
             }

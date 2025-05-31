@@ -39,7 +39,7 @@ namespace FG_beginner_guide_rework
 
         public static void SF6_Combos()
         {
-
+            Console.WriteLine("Test");
         }
 
         public static void MK1_Combos()
